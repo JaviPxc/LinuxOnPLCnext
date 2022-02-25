@@ -30,7 +30,7 @@ Esto mantendrá sincronizado el reloj (fecha y hora), pero es algo independiente
 2. Conéctese al controlador por __SFTP__ a través de su dirección IP e inicie sesión como usuario admin. La contraseña por defecto para el usuario admin está impresa en la carcasa del controlador.
 3. Copiar el fichero __ntp.conf__ a __/opt/plcnext/__.
 4. Conéctese al controlador por __SSH__ como admin.
-5. Cambiar al usuario root. Consultar [Acceso con usuario root](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Acceso_con_usuario_root.md).
+5. Cambiar al usuario root. Consultar [acceso con usuario root](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Acceso_con_usuario_root.md).
 6. Introducir este comando: ```mv /opt/plcnext/ntp.conf /etc/ntp.conf```.
 7. Comprobar que el controlador tiene [acceso a internet](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Comprobar_acceso_a_internet.md).
 8. Introducir este comando: ```/etc/init.d/ntpd restart``` para reiniciar el servicio ntp.
@@ -40,7 +40,7 @@ Esto mantendrá sincronizado el reloj (fecha y hora), pero es algo independiente
 # Cambiar la zona horaria
 1. Conéctese al controlador por __SSH__ a través de su dirección IP e inicie sesión como usuario admin. La contraseña por defecto para el usuario admin está impresa en la carcasa del controlador.
 2. Introducir este comando: ```ls -l /etc/localtime```. Para comprobar la zona horaria actual.
-3. Cambiar al usuario root. Consultar [Acceso con usuario root](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Acceso_con_usuario_root.md).
+3. Cambiar al usuario root. Consultar [acceso con usuario root](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Acceso_con_usuario_root.md).
 5. Introducir este comando: ```unlink /etc/localtime```. Para dejar utilizar la zona horaria actual.
 6. Introducir este comando: ```ls -l /etc/localtime```. Para comprobar que no hay referencia a una zona horaria específica.
 7. Introducir este comando: ```ln -sfn  /usr/share/zoneinfo/<NUEVA_ZONA_HORARIA> /etc/localtime```. Por ejemplo, sln -sfn  /usr/share/zoneinfo/Europe/Madrid /etc/localtime.
