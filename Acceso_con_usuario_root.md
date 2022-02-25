@@ -71,4 +71,5 @@ PermitRootLogin yes
 
 ## ENCLACES RELACIONADOS
 [PLCnext help. User rights](https://www.plcnext.help/te/Operating_System/Root_rights.htm#Setting_a_root_user_password)
+
 [PLCnext help. SSH login as root user](https://www.plcnext.help/te/Operating_System/SSH_login_as_root_user.htm)
