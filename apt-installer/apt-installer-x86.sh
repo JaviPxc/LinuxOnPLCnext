@@ -2,7 +2,7 @@
 [ ! -d "opt/plcnext/apt_installer_x86" ] && mkdir /opt/plcnext/apt_installer_x86
 
 #go to folder
-cd /opt/plcnext/apt_installer
+cd /opt/plcnext/apt_installer_x86
 
 sed -i -e 's/FAIL_DELAY/#FAIL_DELAY/' /etc/login.defs
 
