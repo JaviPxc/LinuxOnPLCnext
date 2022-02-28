@@ -51,7 +51,7 @@ PermitRootLogin yes
 
 ## Desactivación del inicio de sesión SSH como usuario root
 1. Conéctese al controlador a través de su dirección IP e inicie sesión como usuario __admin__. La contraseña por defecto para el usuario admin está impresa en la carcasa del controlador.
-2. [Iniciar sesión como usuario root].(https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Acceso_con_usuario_root.md#utilizar-el-usuario-root)
+2. [Iniciar sesión como usuario root](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Acceso_con_usuario_root.md#utilizar-el-usuario-root).
 3. Abrir el archivo ``` /etc/ssh/sshd_config```. (por ejemplo, con el editor vim o nano).
 4. En la sección __# Authentication:__, desactivar la entrada poniendo de nuevo un comentario __#PermitRootLogin yes__.
  ```
