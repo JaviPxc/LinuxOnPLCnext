@@ -23,8 +23,8 @@ wget http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6_2.31-13_amd64.deb
 dpkg --force-all -i libc6_2.31-13_amd64.deb
 
 
-dpkg --configure libgcc-s1_10.2.1-6_i386
-dpkg --configure libcrypt1_4.4.18-4_i386
+dpkg --configure libgcc-s1_10.2.1-6_amd64
+dpkg --configure libcrypt1_4.4.18-4_amd64
 #pause install adduser
 
 
