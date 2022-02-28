@@ -1,4 +1,4 @@
-# PASOS PREVIOS
+# Pasos previos
 1. Tener instalado en el PC un __cliente SFTP__. Por ejemplo, [WinSCP](https://winscp.net/eng/download.php).
 2. Tener instalado en el PC un __cliente SSH__. Por ejemplo, [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
@@ -69,7 +69,7 @@ PermitRootLogin yes
 5. Reiniciar el servicio SSH con __/etc/init.d/sshd restart__.
 
 
-## ENCLACES RELACIONADOS
+## Enlaces relacionados
 [PLCnext help. User rights](https://www.plcnext.help/te/Operating_System/Root_rights.htm#Setting_a_root_user_password)
 
 [PLCnext help. SSH login as root user](https://www.plcnext.help/te/Operating_System/SSH_login_as_root_user.htm)
