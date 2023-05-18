@@ -9,28 +9,19 @@ iface lo inet loopback
 auto eth0
 iface eth0 inet dhcp
 
-#MGuard Secure cloud static access
-#auto eth0:0
+# Internal static IP. No gateway.
 iface eth0 inet static
-    address 192.168.152.152
+    address 192.168.1.52
     netmask 255.255.255.0
     gateway 0.0.0.0
     dns-nameservers 8.8.8.8 8.8.4.4
 
-# Keypad interface
-#auto eth0:1
+# Extra static IP. No gateway
 iface eth0 inet static
-    address 152.152.152.152
+    address 10.70.10.52
     netmask 255.255.255.0
     gateway 0.0.0.0
     dns-nameservers 8.8.8.8 8.8.4.4
-
-# Auxiliar static IP
-iface eth0 inet static
-   address 192.168.1.152
-   netmask 255.255.255.0
-   gateway 0.0.0.0
-   dns-nameservers 8.8.8.8 8.8.4.4
 
 # ensp is a adapter for the left side extension (for axcf1152 you probably never use that interface, but with axcf2152 could be).
 auto enp1s0
