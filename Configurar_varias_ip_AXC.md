@@ -4,7 +4,7 @@
 3. Tener instalado en el PC un __editor de texto__. Por ejemplo, [Notepad++](https://notepad-plus-plus.org/downloads/).
 
 # Editar fichero interfaces
-1. 1. Descargar el fichero [__interfaces subido al repositorio__](files/interfaces) y utilizarlo como plantilla. Crear un fichero llamado  y abrir con el editor Notepad++.
+1. 1. Descargar el fichero [__interfaces__ subido al repositorio](files/interfaces) y utilizarlo como plantilla. Crear un fichero llamado  y abrir con el editor Notepad++.
 2. El fichero de ejemplo se asignan a la interfaz de red eth0:
    - Una IP por DHCP. Por esta puerta de enlace enroutará el equipo.
    - Una IP fija, 192.168.1.52, sin puerta de enlace.
