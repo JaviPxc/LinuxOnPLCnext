@@ -1,0 +1,41 @@
+# /etc/network/interfaces -- configuration file for ifup(8), ifdown(8)
+
+# The loopback interface
+auto lo
+iface lo inet loopback
+
+# Wired or wireless interfaces
+# DHCP IP given by the router
+auto eth0
+iface eth0 inet dhcp
+
+#MGuard Secure cloud static access
+#auto eth0:0
+iface eth0 inet static
+    address 192.168.152.152
+    netmask 255.255.255.0
+    gateway 0.0.0.0
+    dns-nameservers 8.8.8.8 8.8.4.4
+
+# Keypad interface
+#auto eth0:1
+iface eth0 inet static
+    address 152.152.152.152
+    netmask 255.255.255.0
+    gateway 0.0.0.0
+    dns-nameservers 8.8.8.8 8.8.4.4
+
+# Auxiliar static IP
+iface eth0 inet static
+   address 192.168.1.152
+   netmask 255.255.255.0
+   gateway 0.0.0.0
+   dns-nameservers 8.8.8.8 8.8.4.4
+
+# ensp is a adapter for the left side extension (for axcf1152 you probably never use that interface, but with axcf2152 could be).
+auto enp1s0
+iface enp1s0 inet static
+    address 192.168.2.10
+    netmask 255.255.255.0
+    gateway 192.168.2.1
+    dns-nameservers 8.8.8.8 8.8.4.4
