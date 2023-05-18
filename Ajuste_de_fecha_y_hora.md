@@ -26,7 +26,7 @@ La fecha y la hora del controlador pueden mantenerse actualizadas automáticamen
 
 Esto mantendrá sincronizado el reloj (fecha y hora), pero es algo independiente de la zona horaria definida en el equipo (esto podrá sumar o restar horas en función de la zona horaria definida).
 
-1. Descargar el fichero [__ntp.conf__ subido al repositorio](files/ntp.conf).
+1. Descargar el fichero [__ntp.conf__](files/ntp.conf) subido al repositorio.
 2. Conéctese al controlador por __SFTP__ a través de su dirección IP e inicie sesión como usuario admin. La contraseña por defecto para el usuario admin está impresa en la carcasa del controlador.
 3. Copiar el fichero __ntp.conf__ a __/opt/plcnext/__.
 4. Conéctese al controlador por __SSH__ como admin.
