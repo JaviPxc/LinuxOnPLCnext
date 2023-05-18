@@ -55,7 +55,7 @@ iface enp1s0 inet static
 2. Copiar el fichero __interfaces__ a __/opt/plcnext/__.
 3. Conéctese al controlador por __SSH__ como admin.
 4. Cambiar al usuario root. Consultar [acceso con usuario root](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Acceso_con_usuario_root.md).
-5. Introducir este comando: ```mv /etc/network/interfaces /etc/network/interfaces_ori```. Almacenar una copia del fichero original.
+5. Introducir este comando: ```mv /etc/network/interfaces /etc/network/interfaces_ori``` para almacenar una copia del fichero original.
 6. Introducir este comando: ```mv /opt/plcnext/interfaces /etc/network/interfaces```.
-7. Introducir este comando: ```reboot```. Reiniciar el PLC para que cargue la nueva configuración de red.
+7. Introducir este comando: ```reboot``` para reiniciar el PLC para que cargue la nueva configuración de red.
 
