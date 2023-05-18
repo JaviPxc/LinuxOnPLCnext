@@ -51,9 +51,12 @@ iface enp1s0 inet static
     ![image](https://github.com/JaviPxc/LinuxOnPLCnext/assets/46561573/84fe1d5c-24eb-4acd-96f1-e1d23b228b4b)
 
 # Copiar el fichero interfaces al PLC
-1. Conéctese al controlador por __SSH__ a través de su dirección IP e inicie sesión como usuario __admin__. La contraseña por defecto para el usuario admin está impresa en la carcasa del controlador.
-2. Introducir este comando: ```ping -c4 8.8.8.8```. Si responde al ping, el PLC tiene acceso a internet.
-3. Introducir este comando: ```ping -c4 www.google.com```. Si responde al ping, el PLC tiene acceso a internet y además es capaz de resolver nombres por DNS.
-4. Si no hay conexión a internet, comprobar:
-  4.1. Introducir este comando: ```ip a s dev eth0``` para comprobar la configuración de IPs del PLCnext.
-  4.2. Introducir este comando: ```ip r``` para comprobar la puerta de enlace (gateway) del PLCnext.
+1. Descargar el fichero subido al repositorio.
+2. Conéctese al controlador por __SFTP__ a través de su dirección IP e inicie sesión como usuario admin. La contraseña por defecto para el usuario admin está impresa en la carcasa del controlador.
+3. Copiar el fichero __interfaces__ a __/opt/plcnext/__.
+4. Conéctese al controlador por __SSH__ como admin.
+5. Cambiar al usuario root. Consultar [acceso con usuario root](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Acceso_con_usuario_root.md).
+6. Introducir este comando: ```mv /etc/network/interfaces /etc/network/interfaces_ori```. Almacenar una copia del fichero original.
+7. Introducir este comando: ```mv /opt/plcnext/interfaces /etc/network/interfaces```.
+8. Introducir este comando: ```reboot```. Reiniciar el PLC para que cargue la nueva configuración de red.
+
