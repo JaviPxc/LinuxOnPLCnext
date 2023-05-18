@@ -45,6 +45,11 @@ iface enp1s0 inet static
     dns-nameservers 8.8.8.8 8.8.4.4
 ```
 
+3. El fichero debe tener el caracter __fin de línea en formato Linux__.
+  - Notepad++ permite mostrar los caracteres fin de linea y cambiar el formato entre Windows(CRLF)-Linux(LF). 
+    ![image](https://github.com/JaviPxc/LinuxOnPLCnext/assets/46561573/191c7472-d26b-4ee2-aec3-a9545972b3c1)
+    ![image](https://github.com/JaviPxc/LinuxOnPLCnext/assets/46561573/84fe1d5c-24eb-4acd-96f1-e1d23b228b4b)
+
 # Copiar el fichero interfaces al PLC
 1. Conéctese al controlador por __SSH__ a través de su dirección IP e inicie sesión como usuario __admin__. La contraseña por defecto para el usuario admin está impresa en la carcasa del controlador.
 2. Introducir este comando: ```ping -c4 8.8.8.8```. Si responde al ping, el PLC tiene acceso a internet.
