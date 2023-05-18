@@ -47,8 +47,8 @@ iface enp1s0 inet static
 
 3. El fichero debe tener el caracter __fin de línea en formato Linux__.
    - Notepad++ permite mostrar los caracteres fin de linea y cambiar el formato entre Windows(CRLF)-Linux(LF). 
-    ![image](https://github.com/JaviPxc/LinuxOnPLCnext/assets/46561573/191c7472-d26b-4ee2-aec3-a9545972b3c1)
-    ![image](https://github.com/JaviPxc/LinuxOnPLCnext/assets/46561573/84fe1d5c-24eb-4acd-96f1-e1d23b228b4b)
+    ![image](https://github.com/JaviPxc/LinuxOnPLCnext/assets/46561573/98e0aba3-cd66-43b6-85c8-db337663095f)
+    ![image](https://github.com/JaviPxc/LinuxOnPLCnext/assets/46561573/5525fcb8-a1be-4217-a11a-d72fbc6d614f)
 
 # Copiar el fichero interfaces al PLC
 1. Conéctese al controlador por __SFTP__ a través de su dirección IP e inicie sesión como usuario admin. La contraseña por defecto para el usuario admin está impresa en la carcasa del controlador.
