@@ -31,11 +31,12 @@ Esto mantendrá sincronizado el reloj (fecha y hora), pero es algo independiente
 3. Copiar el fichero __ntp.conf__ a __/opt/plcnext/__.
 4. Conéctese al controlador por __SSH__ como admin.
 5. Cambiar al usuario root. Consultar [acceso con usuario root](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Acceso_con_usuario_root.md).
-6. Introducir este comando: ```mv /opt/plcnext/ntp.conf /etc/ntp.conf```.
-7. Comprobar que el controlador tiene [acceso a internet](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Comprobar_acceso_a_internet.md).
-8. Introducir este comando: ```/etc/init.d/ntpd restart``` para reiniciar el servicio ntp.
-9. Introducir este comando: ```ntpq -p``` para ver la lista de servidores NTP con los que conecta el equipo. En cuanto esté sincronizado con un servidor, este aparecerá con un asterisco "*" delante.
-10. Introducir este comando: ```date``` para ver la fecha del equipo.
+6. Introducir este comando: ```mv /etc/ntp.conf /etc/ntp.conf_ori``` para almacenar una copia del fichero original.
+7. Introducir este comando: ```mv /opt/plcnext/ntp.conf /etc/ntp.conf```.
+8. Comprobar que el controlador tiene [acceso a internet](https://github.com/JaviPxc/LinuxOnPLCnext/blob/main/Comprobar_acceso_a_internet.md).
+9. Introducir este comando: ```/etc/init.d/ntpd restart``` para reiniciar el servicio ntp.
+10. Introducir este comando: ```ntpq -p``` para ver la lista de servidores NTP con los que conecta el equipo. En cuanto esté sincronizado con un servidor, este aparecerá con un asterisco "*" delante.
+11. Introducir este comando: ```date``` para ver la fecha del equipo.
 
 # Cambiar la zona horaria
 1. Conéctese al controlador por __SSH__ a través de su dirección IP e inicie sesión como usuario admin. La contraseña por defecto para el usuario admin está impresa en la carcasa del controlador.
